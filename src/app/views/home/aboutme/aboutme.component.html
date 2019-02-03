@@ -1,0 +1,33 @@
+<section id="testimonials-section" class="testimonials-section home-section">
+  <div class="container">
+    <div class="section-header">
+      <h3>About Me</h3>
+      <p class="mat-sub-heading">Hers are some of my personal attributes    </p>
+    </div>
+
+    <div fxLayout="row" fxLayout.lt-md="column"  fxLayoutGap="30px">
+      <div fxFlex="33.33" *ngFor="let attr of attributes">
+          <mat-card class="p-0">
+
+              <mat-card-content class="">
+                <img class="company-logo" [src]="attr.logo">
+
+                  <ul *ngFor="let at of attr.text">
+                    <li class="about-me">{{ at }}</li>
+                  </ul>
+                <mat-divider class="mb-1"></mat-divider>
+
+                  <span class="toolbar-avatar md user-photo">
+                    <img [src]="attr.photo" alt=""></span>
+                  <span class="user-title">{{attr.title}}</span><br>
+                  <span class="user-subtitle text-muted mat-project-title">{{attr.subtitle}}</span>
+              </mat-card-content>
+          </mat-card>
+      </div>
+    </div>
+
+
+  </div>
+</section>
+
+

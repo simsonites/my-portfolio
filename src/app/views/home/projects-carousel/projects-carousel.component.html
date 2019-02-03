@@ -1,0 +1,33 @@
+<section id="portfolio-section" class="portfolio-section home-section"
+         [ngClass]="{'light-gray': backgroundGray}">
+    <div class="container">
+      <div class="section-header">
+        <h3>Most Recent Projects</h3>
+        <p>Below are some of my recent project built from scratch with the different
+          technologies as listed in my toolbox above.
+        </p>
+      </div>
+
+    <ngu-carousel [inputs]="carouselOptions">
+      <ngu-item NguCarouselItem *ngFor="let p of projects">
+          <mat-card class="p-0">
+            <h4 class="mat-sub-heading">{{ p.number}}</h4>
+              <img mat-card-image [src]="p.photo">
+              <mat-card-content>
+                <h5 class="mat-sub-heading"><strong><a href="">{{p.title}}</a></strong></h5>
+                <p>
+                  {{p.text}}
+                </p>
+                <mat-divider class="mb-1"></mat-divider>
+                <a href="{{p.demo}}" mat-flat-button color="primary">{{ p.demotText}}</a>
+                </mat-card-content>
+            </mat-card>
+      </ngu-item>
+      
+      <button mat-fab NguCarouselPrev class='carousel-left'>
+        <mat-icon>keyboard_arrow_left</mat-icon></button>
+      <button mat-fab NguCarouselNext class='carousel-right'>
+        <mat-icon>keyboard_arrow_right</mat-icon></button>
+  </ngu-carousel>
+    </div>
+  </section>
