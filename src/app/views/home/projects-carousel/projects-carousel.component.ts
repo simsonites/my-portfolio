@@ -11,36 +11,36 @@ export class ProjectsCarouselComponent implements OnInit {
   
   public carouselOptions: NguCarousel;
   public projects = [{
-    photo: 'assets/images/b6.jpg',
-    text: `This is a simple course registration portal where students can go
+    photo: 'assets/images/edu1.jpg',
+    text: `This is a simple course registration management where students can go
     and register for courses
      `,
     title: 'Students Course Management System',
-    demo:'http://icourses.us-east-2.elasticbeanstalk.com',
+    demo:'http://c-registration.us-east-2.elasticbeanstalk.com',
     demotText:'live demo',
     number:'Project One',
   }, {
     photo: 'assets/images/b4.jpg',
-    text: `This is simple online boutique that sells wears where people can go 
-    for shopping of different wears`,
-    title: 'Best-Selections Online Boutique',
+    text: `This is simple online shop that sells computers 
+    and phones of any kind from where anyone can get good stuffs`,
+    title: 'New-Wave Computers & Phones',
     demo:'http://www.google.com',
-    demotText:'live demo',
+    demotText:'in-progress...',
     number:'Project Two',
   },
     {
     photo: 'assets/images/b7.jpg',
-  text: `This is simple employees forum where employees can share different
+  text: `This is simple employees forum where employee's can share different
    knowledge and experiences `,
   title: 'Employees Forum',
   demo:'',
-      demotText:'In Progress ....',
+      demotText:'coming soon',
       number:'Project Three',
 },
     {
     photo: 'assets/images/b9.jpg',
     text: `Who Am I ? is a proposed project that can tell you who you 
-    are by just asking you some few question`,
+    are by just asking you some few questions`,
     title: 'Who am I ?',
     demo:'Coming up soon....',
     demotText:'Coming soon ! ....',
